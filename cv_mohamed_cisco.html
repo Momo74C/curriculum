@@ -1,0 +1,221 @@
+
+    <!DOCTYPE html>
+    <html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CV Mohamed Elshourbgy</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+            
+            body {
+                font-family: 'Roboto', sans-serif;
+                background: #f0f2f5;
+                margin: 0;
+                padding: 20px;
+                color: #333;
+            }
+            .container {
+                max-width: 1000px;
+                margin: 0 auto;
+                background: white;
+                box-shadow: 0 0 20px rgba(0,0,0,0.1);
+                display: grid;
+                grid-template-columns: 300px 1fr;
+                min-height: 1000px;
+            }
+            /* --- COLONNA SINISTRA (DARK) --- */
+            .sidebar {
+                background-color: #1B2631; /* Dark Blue Cisco Style */
+                color: white;
+                padding: 30px 20px;
+            }
+            .profile-img-placeholder {
+                width: 150px;
+                height: 150px;
+                background-color: #34495E;
+                border-radius: 50%;
+                margin: 0 auto 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 40px;
+                font-weight: bold;
+                color: #85929E;
+            }
+            .sidebar h2 {
+                font-size: 18px;
+                text-transform: uppercase;
+                border-bottom: 2px solid #3498DB;
+                padding-bottom: 5px;
+                margin-top: 30px;
+                letter-spacing: 1px;
+            }
+            .contact-info div {
+                margin-bottom: 10px;
+                font-size: 14px;
+            }
+            .skill-tag {
+                display: inline-block;
+                background: #34495E;
+                padding: 4px 8px;
+                border-radius: 4px;
+                margin-bottom: 5px;
+                font-size: 13px;
+            }
+            .sidebar ul {
+                list-style: none;
+                padding: 0;
+            }
+            .sidebar li {
+                margin-bottom: 8px;
+                font-size: 14px;
+            }
+
+            /* --- COLONNA DESTRA (MAIN) --- */
+            .main-content {
+                padding: 40px;
+            }
+            .header-name h1 {
+                margin: 0;
+                font-size: 38px;
+                color: #2C3E50;
+                text-transform: uppercase;
+            }
+            .header-name h3 {
+                margin: 5px 0 20px;
+                font-size: 18px;
+                color: #3498DB; /* Cisco Light Blue */
+                font-weight: 400;
+            }
+            .section-title {
+                font-size: 20px;
+                font-weight: 700;
+                color: #2C3E50;
+                border-bottom: 2px solid #BDC3C7;
+                padding-bottom: 5px;
+                margin-top: 30px;
+                margin-bottom: 15px;
+            }
+            .job-card {
+                margin-bottom: 20px;
+            }
+            .job-title {
+                font-size: 18px;
+                font-weight: bold;
+                color: #2C3E50;
+            }
+            .job-company {
+                font-style: italic;
+                color: #7F8C8D;
+                margin-bottom: 8px;
+            }
+            .job-desc li {
+                margin-bottom: 5px;
+                line-height: 1.5;
+            }
+            
+            /* Stile per la stampa */
+            @media print {
+                body { padding: 0; background: white; }
+                .container { box-shadow: none; width: 100%; max-width: 100%; grid-template-columns: 28% 72%; }
+                .sidebar { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            }
+        </style>
+    </head>
+    <body>
+
+    <div class="container">
+        <!-- SIDEBAR -->
+        <div class="sidebar">
+            <div class="profile-img-placeholder">ME</div>
+            
+            <h2>Contatti</h2>
+            <div class="contact-info">
+                <div>📞 +39 333 000 0000</div>
+                <div>📧 email@gmail.com</div>
+                <div>📍 Milano, Italia</div>
+                <div>🔗 linkedin.com/in/mohamed</div>
+                <div>💻 github.com/mohamed</div>
+            </div>
+
+            <h2>Skills Tecniche</h2>
+            <div class="contact-info">
+                <span class="skill-tag">Python & Rust</span>
+                <span class="skill-tag">Cisco IOS-XE / NX-OS</span>
+                <span class="skill-tag">Penetration Testing</span>
+                <span class="skill-tag">Linux / Kali</span>
+                <span class="skill-tag">Docker & Git</span>
+                <span class="skill-tag">Network Automation</span>
+            </div>
+
+            <h2>Certificazioni</h2>
+            <ul>
+                <li>★ <strong>OSCP</strong> (OffSec)</li>
+                <li>★ <strong>CCNP Enterprise</strong></li>
+                <li>★ <strong>CCNA</strong></li>
+                <li>★ <strong>DevNet Associate</strong></li>
+            </ul>
+
+            <h2>Lingue</h2>
+            <ul>
+                <li>🇮🇹 Italiano (Madrelingua)</li>
+                <li>🇬🇧 Inglese (C1 - Prof.)</li>
+                <li>🇸🇦 Arabo (Fluente)</li>
+            </ul>
+        </div>
+
+        <!-- MAIN CONTENT -->
+        <div class="main-content">
+            <div class="header-name">
+                <h1>Mohamed Elshourbgy</h1>
+                <h3>Network Security Engineer & DevSecOps Specialist</h3>
+                <p>
+                    Ingegnere del Politecnico con profilo ibrido: solide basi di networking Cisco unite a competenze avanzate di sicurezza offensiva (OSCP) e programmazione moderna (Rust/Python). Ambisco ad applicare la metodologia "Security-by-Design" nelle infrastrutture Cisco di prossima generazione.
+                </p>
+            </div>
+
+            <div class="section-title">ESPERIENZA PROFESSIONALE</div>
+            
+            <div class="job-card">
+                <div class="job-title">Network Security Engineer</div>
+                <div class="job-company">Azienda Attuale | Milano | 2023 - Presente</div>
+                <ul class="job-desc">
+                    <li>Gestione e hardening di firewall Next-Gen e switch Cisco Catalyst/Nexus.</li>
+                    <li>Sviluppo di script <strong>Python</strong> per automatizzare audit di sicurezza e backup su 200+ device (riduzione effort del 40%).</li>
+                    <li>Esecuzione periodica di Vulnerability Assessment interni e compliance check (CIS Benchmarks).</li>
+                    <li>Integrazione della sicurezza nelle pipeline di sviluppo software.</li>
+                </ul>
+            </div>
+
+            <div class="job-card">
+                <div class="job-title">Junior Network Administrator</div>
+                <div class="job-company">Azienda Precedente | Città | 2021 - 2023</div>
+                <ul class="job-desc">
+                    <li>Troubleshooting avanzato su protocolli di routing OSPF e BGP.</li>
+                    <li>Configurazione e manutenzione VPN Site-to-Site per sedi remote.</li>
+                    <li>Analisi dei log di rete tramite SQL e creazione reportistica.</li>
+                </ul>
+            </div>
+
+            <div class="section-title">ISTRUZIONE</div>
+            <div class="job-card">
+                <div class="job-title">Laurea in Ingegneria Informatica</div>
+                <div class="job-company">Politecnico | Anno conseguimento</div>
+                <div>Tesi focalizzata su Reti di Calcolatori e Crittografia Applicata.</div>
+            </div>
+
+            <div class="section-title">PROGETTI & LABS</div>
+            <div class="job-card">
+                <ul>
+                    <li><strong>Rust Network Sniffer:</strong> Sviluppato tool di analisi pacchetti per studio low-level memory safety.</li>
+                    <li><strong>Hack The Box:</strong> Pratica costante di scenari offensivi (Rank: Top 10%).</li>
+                    <li><strong>Home Lab:</strong> Emulazione reti complesse Cisco con EVE-NG e automazione Ansible.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    </body>
+    </html>
+    
